@@ -38,8 +38,8 @@ function curImg = readImage(imName , imgDir, maskDir,bCreateMask )
     clear name;
 
     curImg.StemName = StemName;
-    curImg.img = img(:, 499:2500,:);
-    curImg.mask = mask(:, 499:2500,:); 
+    curImg.img = img;
+    curImg.mask = mask; 
     curImg.ext = ext;
     curImg.path = [pathstr '\'];
 end
